@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>使用HTML5方式验证注册页面</title>
+	<link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+<section id="register">
+	<div><img src="images/logo.jpg" alt="logo" /><img src="images/banner.jpg" alt="banner" /></div>
+	<h1 class="hr_1">新用户注册</h1>
+	<form action="" method="post" name="myform">
+		<dl>
+			<dt>用户名：</dt>
+			<dd><input id="user" type="text" placeholder="以英文字母开头4～16个英文字母或数字" required pattern="[a-zA-Z][a-zA-Z0-9]{3,15}"/></dd>
+		</dl>
+		<dl>
+			<dt>密码：</dt>
+			<dd><input id="pwd" type="password" placeholder="4～10个英文字母或数字"  required  pattern="[a-zA-Z0-9]{4,10}"/></dd>
+		</dl>
+		<dl>
+			<dt>确认密码：</dt>
+			<dd><input id="repwd" type="password"/></dd>
+		</dl>
+		<dl>
+			<dt>电子邮箱：</dt>
+			<dd><input id="email" type="email"/></dd>
+		</dl>
+		<dl>
+			<dt>手机号码：</dt>
+			<dd><input id="mobile" type="text" pattern="1\d{10}" /></dd>
+		</dl>
+		<dl>
+			<dt>生日：</dt>
+			<dd><input id="birth" type="text" pattern="((19\d{2})|(200\d)|(201[0-6]))-(0?[1-9]|1[0-2])-(0?[1-9]|[1-2]\d|3[0-1])"/></dd>
+		</dl>
+		<dl>
+			<dt>&nbsp;</dt>
+			<dd><input name="" type="image" src="images/register.jpg" class="btn" /></dd>
+		</dl>
+  </form>
+</section>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".btn").click(function(){
+			var u=document.getElementById("user");
+			if(u.validity.valueMissing==true){
+				u.setCustomValidity("用户名不能为空");
+			}
+			else if(u.validity.patternMismatch==true){
+				u.setCustomValidity("用户名必须是字母开头的4~16位的英文字母和数字");
+			}
+			else{
+				u.setCustomValidity("");
+			}
+
+			var pwd=document.getElementById("pwd");
+			if(pwd.validity.valueMissing==true){
+				pwd.setCustomValidity("密码不能为空");
+			}
+			else if(pwd.validity.patternMismatch==true){
+				pwd.setCustomValidity("密码必须是4~10位的英文字母和数字");
+			}
+			else{
+				pwd.setCustomValidity("");
+			}
+
+			var email=document.getElementById("email");
+			if(email.validity.valueMissing==true){
+				email.setCustomValidity("邮箱不能为空");
+			}
+			else if(email.validity.typeMismatch==true){
+				email.setCustomValidity("邮箱格式不正确");
+			}
+			else{
+				email.setCustomValidity("");
+			}
+
+			var mobile=document.getElementById("mobile");
+			if(mobile.validity.patternMismatch==true){
+				mobile.setCustomValidity("手机必须是1开头的11位数字");
+			}
+			else{
+				mobile.setCustomValidity("");
+			}
+
+			var birth=document.getElementById("birth");
+			if(birth.validity.patternMismatch==true){
+				birth.setCustomValidity("生日的年份必须为1900～2016之间，格式为1980-5-12或1988-05-04");
+			}
+			else{
+				birth.setCustomValidity("");
+			}
+
+
+
+		})
+	})
+</script>
+</body>
+</html>

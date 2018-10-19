@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>创建继承Person的Student子类</title>
+</head>
+<body>
+<p>姓名：<span id="name"></span></p>
+<p>语文：<span id="chinese"></span></p>
+<p>数学：<span id="math"></span></p>
+<p>年龄：<span id="age"></span></p>
+<script>
+    function Person(name,chinese,math){
+        this.name=name;
+        this.chinese=chinese;
+        this.math=math;
+    }
+    Person.prototype.showName=function(){
+        return this.name;
+    };
+    Person.prototype.showChinese=function(){
+        return this.chinese;
+    };
+    Person.prototype.showMath=function(){
+        return this.math;
+    };
+    function Student(name,chinese,math,age){
+        Person.call(this,name,chinese,math);    //继承属性
+        this.age=age;
+    }
+    Student.prototype=new Person();   // 继承方法
+    Student.prototype.showAge=function(){
+        return this.age;
+    };
+    var student1=new Student("张三",98,80,25);
+    document.getElementById("name").innerHTML=student1.showName();
+    document.getElementById("chinese").innerHTML=student1.showChinese();
+    document.getElementById("math").innerHTML=student1.showMath();
+    document.getElementById("age").innerHTML=student1.showAge();
+
+</script>
+</body>
+</html>

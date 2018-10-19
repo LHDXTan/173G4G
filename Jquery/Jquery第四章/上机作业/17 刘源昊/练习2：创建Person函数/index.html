@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>构造函数创建Person</title>
+    <style>
+        body{line-height: 30px;}
+    </style>
+</head>
+<body>
+<div id="intro"></div>
+<script>
+    function Person(){
+
+    }
+    Person.prototype.name="朗晓明";
+    Person.prototype.age="38";
+    Person.prototype.job="中国内地男演员、歌手";
+    Person.prototype.address="中国北京海淀区";
+    Person.prototype.intro=function(){
+        var str="姓名："+this.name+"<br/>年龄："+this.age+"<br/>工作："+this.job+"<br/>住址："+this.address;
+        document.getElementById("intro").innerHTML=str;
+    }
+    var person1=new Person();
+    person1.intro();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<title>今日团购模块 </title>
+	<link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+<div id="pruduce">
+	<div class="top"></div>
+    <div class="main">
+    	<div class="box">
+        	<dl>
+            	<dt><img src="images/pic1.jpg" /></dt>
+                <dd>[包邮]亮点可移动儿童防身高帖（每个ID限20）</dd>
+                
+            </dl> 
+            <div class="btprice_1"></div>
+        </div>
+        <div class="box">
+        	<dl>
+            	<dt><img src="images/pic2.jpg" /></dt>
+                <dd>[包邮]韩国泡温泉游泳衣价达玛分教保守纤瘦大胸泳装</dd> 
+            </dl> 
+             <div class="btprice_2"></div>
+        </div>
+        <div class="box">
+        	<dl>
+            	<dt><img src="images/pic3.jpg" /></dt>
+                <dd>[包邮]贵人鸟运动透气跑鞋P23423(每个限购5件)</dd>
+               
+            </dl> 
+             <div class="btprice_3"></div>
+        </div>
+    </div> 
+</div>
+
+<script src="js/jquery-1.12.4.js" ></script>
+<script>
+	$(document).ready(function(){
+		$(".box dl").hover(function(){
+			$(this).addClass("hoverstyle");
+		},function(){
+			$(this).removeClass("hoverstyle");
+		});
+	});
+
+</script>
+</body>
+</html>

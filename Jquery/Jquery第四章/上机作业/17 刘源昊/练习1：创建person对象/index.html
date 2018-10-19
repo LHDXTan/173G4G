@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>创建person对象</title>
+    <style>
+        body{line-height: 30px;}
+    </style>
+</head>
+<body>
+<div id="intro"></div>
+<script>
+    var person=new Object();
+    person.name="朗晓明";
+    person.age="38";
+    person.job="中国内地男演员、歌手";
+    person.address="中国北京海淀区";
+    person.intro=function(){
+        var str="姓名："+this.name+"<br/>年龄："+this.age+"<br/>工作："+this.job+"<br/>住址："+this.address;
+        document.getElementById("intro").innerHTML=str;
+    }
+    person.intro();
+</script>
+</body>
+</html>

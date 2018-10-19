@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<title>根据时间问好</title>
+<script type="text/javascript">
+var hour=prompt("请输入当前的小时数：","");
+if(hour>6&&hour<13){
+    document.write("<h2>上午好!欢迎来到贵美</h2>");
+    for(var i=0;i<hour;i++){
+        document.write("<img src='images/smile.gif'>");
+    }
+}
+else if(hour>12&&hour<21){
+    document.write("<h2>下午好!欢迎来到贵美</h2>");
+    for(var j=0;j<hour;j++){
+        document.write("<img src='images/aftermoon.gif'>");
+    }
+}
+else{
+    document.write("<h2>夜深了，该休息了！</h2>");
+    for(var k=0;k<hour;k++){
+        document.write("<img src='images/moon.gif'>");
+    }
+}
+</script>
+</head>
+
+<body>
+</body>
+</html>

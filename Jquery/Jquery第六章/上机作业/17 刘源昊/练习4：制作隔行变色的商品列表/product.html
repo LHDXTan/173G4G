@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>隔行变色的商品列表</title>
+	 <link rel="stylesheet" href="css/product.css">
+ </head>
+ <body>
+	<div class="contain">
+		<table border="0" width="100%" cellspacing="0">
+			<tr class="t-head">
+				<th width="50%">商品</th>
+				<th width="10%">单价</th>
+				<th width="10%">数量</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/f1.jpg" width="50" height="50"/>
+					<a href="">丹幕妮通勤波点印花毛衣</a>
+				</td>
+				<td>180.0</td>
+				<td>3</td>
+				<td><a href="javascript:void(0);" id="del">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/f2.jpg" width="50" height="50"/>
+					<a href="">预售太平洋女装连衣裙</a>
+				</td>
+				<td>765.0</td>
+				<td>4</td>
+				<td><a href="javascript:void(0);" id="del">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/f3.jpg" width="50" height="50"/>
+					<a href="">丹幕妮通勤红色小外套</a>
+				</td>
+				<td>456.0</td>
+				<td>2</td>
+				<td><a href="javascript:void(0);" id="del">删除</a></td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/f4.jpg" width="50" height="50"/>
+					<a href="">漫巴森秋装新款套头衫</a>
+				</td>
+				<td>140.0</td>
+				<td>1</td>
+				<td><a href="javascript:void(0);" id="del">删除</a></td>
+			</tr>
+		</table>
+	</div>
+ </body>
+ <script src="js/jquery-1.12.4.js"></script>
+ <script>
+	$(document).ready(function(){
+		$(".contain tr:not(.t-head):even").css("background","#eff7d1");
+		$(".contain tr:not(.t-head):odd").css("background","#f7e195");
+	});
+ </script>
+</html>

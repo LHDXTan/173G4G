@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+ <title>贵美商城注册页面</title>
+	<link rel="stylesheet" href="css/register.css">
+ </head>
+
+<body>
+	<div id="container">
+		<iframe id="head" runat="server" src="head.htm" width="980px" height="136px" frameborder="0" scrolling="no"></iframe>
+		<div id="main" class="reg_bg">
+     <section class="register">
+		 <form id="formRegister" method="post" action="register_success.htm">
+			 <dl>
+				 <dt>名字：</dt>
+				 <dd><input id="fname" type="text"  class="reg_text"  size="24" /></dd>
+			 </dl>
+			 <dl>
+				 <dt>姓氏：</dt>
+				 <dd><input id="lname" type="text" class="reg_text" size="24" /></dd>
+			 </dl>
+			 <dl>
+				 <dt>登录名：</dt>
+				 <dd><input name="sname" type="text"  class="reg_text"   size="24" />（可包含 a-z、0-9 和下划线）</dd>
+			 </dl>
+			 <dl>
+				 <dt>密码：</dt>
+				 <dd><input id="pass" type="password"  class="reg_text"  size="26" />（至少包含 6 个字符）</dd>
+			 </dl>
+			 <dl>
+				 <dt>再次输入密码：</dt>
+				 <dd><input id="rpass"  type="password" class="reg_text" size="26" />				 </dd>
+			 </dl>
+			 <dl>
+				 <dt>电子邮箱：</dt>
+				 <dd><input id="email"  type="text" class="reg_text" size="24" />（必须包含 @  和.字符）</dd>
+			 </dl>
+			 <dl>
+				 <dt>性别：</dt>
+				 <dd>
+					 <input id="gen" style="border:0px;" type="radio" value="男" checked="checked" />
+					 <img src="images/Male.gif" width="23" height="21" alt="alt" />男&nbsp;
+					 <input name="gen" style="border:0px;" type="radio" value="女" class="input" />
+					 <img src="images/Female.gif" width="23" height="21" alt="alt" />女
+				 </dd>
+			 </dl>
+			 <dl>
+				 <dt>头像：</dt>
+				 <dd><input type="file" /> </dd>
+			 </dl>
+			 <dl>
+				 <dt>爱好：</dt>
+				 <dd>
+					 <label>
+						 <input type="checkbox" id="checkbox" value="checkbox" />
+					 </label>
+					 运动&nbsp;&nbsp;
+					 <label>
+						 <input type="checkbox" id="checkbox2" value="checkbox" />
+					 </label>
+					 聊天&nbsp;&nbsp;
+					 <label>
+						 <input type="checkbox" id="checkbox3" value="checkbox" />
+					 </label>
+					 玩游戏
+				 </dd>
+			 </dl>
+			 <dl>
+				 <dt>出生日期：</dt>
+				 <dd>
+					 <input id="nYear" class="reg_text n4" id="nYear"  value="yyyy" maxlength="4" />&nbsp;年&nbsp;&nbsp;
+					 <select id="nMonth">
+						 <option value="" selected="selected">[选择月份]</option>
+						 <option value="0">一月</option>
+						 <option value="1">二月</option>
+						 <option value="2">三月</option>
+						 <option value="3">四月</option>
+						 <option value="4">五月</option>
+						 <option value="5">六月</option>
+						 <option value="6">七月</option>
+						 <option value="7">八月</option>
+						 <option value="8">九月</option>
+						 <option value="9">十月</option>
+						 <option value="10">十一月</option>
+						 <option value="11">十二月</option>
+					 </select>&nbsp;月&nbsp;&nbsp;
+					 <input id="nDay"  class="reg_text n4"  value="dd" size="2" maxlength="2" />日
+				 </dd>
+			 </dl>
+			 <dl>
+				 <dt>&nbsp;
+				 </dt>
+				 <dd>
+					 <input type="image" id="Button" style="border:0px;" src="images/submit.gif" /> <img src="images/reset.gif" onclick="javascript:form1.reset();" style="cursor:pointer;" alt="重置" />
+				 </dd>
+			 </dl>
+     </form>
+	 </section>
+		<section class="registerRight">
+			<h4><img src="images/read.gif" alt="alt" />阅读贵美网服务协议 </h4>
+        			<textarea id="textarea" cols="30" rows="15">欢迎阅读服务条款协议，本协议阐述之条款和条件适用于您使用Gmgw.com网站的各种工具和服务。
+  本服务协议双方为贵美与贵美网用户，本服务协议具有合同效力。
+  贵美的权利和义务
+    1.贵美有义务在现有技术上维护整个网上交易平台的正常运行，并努力提升和改进技术，使用户网上交易活动的顺利。
+    2.对用户在注册使用贵美网上交易平台中所遇到的与交易或注册有关的问题及反映的情况，贵美应及时作出回复。
+    3.对于在贵美网网上交易平台上的不当行为或其它任何贵美认为应当终止服务的情况，贵美有权随时作出删除相关信息、终止服务提供等处理，而无须征得用户的同意。
+    4.因网上交易平台的特殊性，贵美没有义务对所有用户的注册资料、所有的交易行为以及与交易有关的其他事项进行事先审查。
+  </textarea>
+		</section>
+    </div>
+		<iframe id="foot" runat="server" src="foot.htm" width="980px" height="150px" frameborder="0" scrolling="no"></iframe>
+	</div><!--container	end-->
+	<script src="js/jquery-1.12.4.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#formRegister").submit(function(){
+				var mail=$("#email").val();
+				if(mail==""){//检测Email是否为空
+					alert("Email不能为空");
+					return false;
+				}
+				if(mail.indexOf("@")==-1){
+					alert("Email格式不正确\n必须包含@");
+					return false;
+				}
+				if(mail.indexOf(".")==-1){
+					alert("Email格式不正确\n必须包含.");
+					return false;
+				}
+				return true;
+			})
+		})
+	</script>
+</body>
+</html>		

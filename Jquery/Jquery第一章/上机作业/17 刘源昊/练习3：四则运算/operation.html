@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>编写四则运算</title>
+</head>
+<body>
+<input name="btn" type="button" value="计算两数运算结果" onclick="account();" />
+<script type="text/javascript">
+    function account()
+    {
+        var op1=prompt("请输入第一个数：","");
+        var op2=prompt("请输入第二个数：","");
+        var sign=prompt("请输入运算符号","")
+        var result;
+        opp1=parseFloat(op1);
+        opp2=parseFloat(op2);
+        switch(sign)
+        {
+            case "+":
+                result=opp1+opp2;
+                break;
+            case "-":
+                result=opp1-opp2;
+                break;
+            case "*":
+                result=opp1*opp2;
+                break;
+            default:
+                result=opp1/opp2;
+        }
+        alert("两数运算结果为："+op1+sign+op2+"="+result);
+    }
+</script>
+</body>
+</html>
