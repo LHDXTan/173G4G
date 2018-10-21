@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>游戏推荐 </title>
+
+<style type="text/css" >
+*{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+}
+#listbox{
+	margin:10px;
+	padding:15px;
+	border:1px solid #CCCCCC;
+	color:#0066FF;
+}
+dl{
+	display:block;
+	float:left;	
+	margin:15px;
+}
+dd{
+	font-size:14px;
+	color:#663300; 
+}
+
+dd a{
+	text-decoration:none;
+	font-size:14px;
+	color:#FF3300;
+}
+dd a:hover{
+	text-decoration:underline;
+}
+.clear{
+	clear:both;
+	height:0px;
+}
+</style>
+
+</head>
+<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.del').click(function(){
+			$(this).parents('dl').remove();
+		});
+
+		$('.add').click(function(){
+			var $htmls ='';
+			$htmls+= '<dl>'
+					+ '	<dt><img src="images/p4.jpg" /></dt>'
+					+ '	<dd>大航海家OL</dd>'
+					+ '	<dd><a class="del" href="javascript:void(0);">删除</a></dd>'
+					+ '	</dl>' ;
+			$($htmls).insertBefore($('.clear'));
+		});
+	});
+</script>
+<body>
+ <div id='listbox'>
+ 	<dl>
+    	<dt><img src="images/p1.jpg" /></dt>
+        <dd>街机三国</dd>
+        <dd><a class='del' href='javascript:void(0);'>删除</a></dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/p2.jpg" /></dt>
+        <dd>霸域</dd>
+        <dd><a class='del' href='javascript:void(0);'>删除</a></dd>
+    </dl>
+    <dl>
+    	<dt><img src="images/p3.jpg" /></dt>
+        <dd>斗破乾坤</dd>
+        <dd><a class='del' href='javascript:void(0);'>删除</a></dd>
+    </dl>
+    
+    <div class='clear'></div>
+	 <input type="button" value='新增游戏'  class='add'/>
+ </div>
+
+</body>
+</html>

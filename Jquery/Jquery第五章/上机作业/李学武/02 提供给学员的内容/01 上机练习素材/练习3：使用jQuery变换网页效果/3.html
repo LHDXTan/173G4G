@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>你是人间的四月天</title>
+</head>
+<style type="text/css">
+body,h1,h2,p,div {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	line-height: 28px;
+	font-family: "΢���ź�";
+}
+
+#shang {
+	margin: 0 auto;
+	width: 800px;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+img {
+	float: left;
+	margin-right: 10px;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 45px;
+}
+
+.zhong {
+	clear: both;
+	display: none;
+}
+
+h2 {
+	line-height: 45px;
+	background: #999999;
+	padding-left: 15px;
+	color: #ffffff;
+}
+
+.zhong p {
+	text-indent: 2em;
+}
+</style>
+<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#book h1").click(function(){
+       $(this).addClass("title");
+       $(this).next() .css("color","green");
+    });
+
+    $(".whole").click(function(){
+        $(".zhong").show();
+    })
+
+})
+</script>
+<body>
+<div id="shang">
+    <img src="images/book.gif" /><h1>你是人间的四月天</h1>
+    <p>
+        笑响亮了四面风<br/>
+        轻灵在春的光艳中交舞看变<br/>
+        你是一月早天的云烟<br/>
+        黄昏吹着风的软<br/>
+        ....<br/>
+        <a href="#" class="whole">查看全部</a><br/>
+    </p>
+    <div class="zhong">
+        <h2>内容简介</h2>
+        <p>你是人间四月天是永正图书推出的“比烟花寂寞”系列之三。“比烟花寂寞”系列包括《民国女子》《爱眉小札》《你是人间四月天》《你是我眉心未完的诗》。这系列以前所未有的包装形式推出，引起读者尖叫连连。一经上市，便引发各大报纸、媒体的一致报道。
+        </p><p>有人崇拜她，把她当做女神、偶像；也有人放出话来，“喜欢她的女人，品行有问题；喜欢她的男人，脑子有问题。”
+    </p><p>她是缺乏幽娴品德的女人，她喜好与人辩论，她用诗句表达她的哀愁，她精通文理，学贯中西。她对文学和艺术，具有本能的、直接的感悟。生长富贵，命运坎坷，修养让她把热情藏在里面，热情却是她生活的支柱。
+        她，就是那个万千宠爱于一身的一代才女——林徽因。
+    </p><p>《你是人间四月天》是林徽因的一本小说、诗歌、散文、剧本集，几乎收录了林徽因所有的经典文学作品。其散文成就颇大，虽然数量不多，但风格独特，知识性强。诗歌尤多，其诗作融人中国古典诗歌和西方唯美派的一些表现手法，每篇文章都是她灵动思绪和满腹才华的凝结。她的语言温婉淡雅，如行云流水，又如拂面的春风。可以说。她的文字拥有超越时间的魅力。笔下流露出令人惊讶的对民间百态的深谙。</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+<title>使用jQuery美化英雄联盟简介页 </title>
+</head>
+<body>
+ <h1>英雄联盟</h1> 
+<p>    《英雄联盟》，简称LOL。</p>
+<p id="content">
+    由<strong>Riot Games </strong>开发，为3D竞技场战游戏，其
+    <span>主创团队由实力强劲的
+        <strong>魔兽争霸</strong>
+        系列游戏多人<span>即时对战</span>自定义地图开发团队
+    </span>...
+    <a href="#">更多详情</a>
+</p>
+<h2>目录</h2>
+<ul class="txt_box">
+    <li class="current">开发团队</li>
+    <li>游戏周边</li>
+    <li>游戏介绍</li>
+    <li>配置需求</li>
+    <li>游戏背景</li>
+</ul>
+</body>
+    <script type="text/javascript" src="../jquery-1.12.4.js" ></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$("body p:nth-of-type(1)").css("background-color","yellow");
+    		$("#content span").css("background-color","#f9f")
+    		$("#content span>span").css({"background-color":"#f00","color":"#fff"})
+    		$(".txt_box .current").css("background-color","#6ff");
+    		
+    	})
+    </script>
+</html>
