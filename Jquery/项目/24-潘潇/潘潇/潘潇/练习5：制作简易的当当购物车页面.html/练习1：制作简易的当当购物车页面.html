@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>制作简易的当当购物车页面</title>
+		<link rel="stylesheet" type="text/css" href="css/简易当当购物车页面.css"/>
+	</head>
+	<script type="text/javascript">
+		function shouchang(){
+		var k=confirm("确定要加入么？")
+		}
+		function shancu(){
+		var k=confirm("确定要删除么？")
+		}function jiesuan(){
+		var k=confirm("确定要结算么？")
+		}
+		
+		
+	</script>
+	<body>
+		<div class="content">
+    <div class="logo">
+        <img src="img/dd_logo.jpg"><span onclick="window.close()">关闭</span>
+    </div>
+    <div class="cartList">
+        <ul>
+            <li onclick="shouchang()">移入收藏</li>
+            <li onclick="shancu()">删除</li>
+            <li onclick="shouchang()">移入收藏</li>
+            <li onclick="shancu()">删除</li>
+            <li onclick="jiesuan()"><span>结 算</span></li>
+        </ul>
+    </div>
+</div>
+		
+	</body>
+</html>

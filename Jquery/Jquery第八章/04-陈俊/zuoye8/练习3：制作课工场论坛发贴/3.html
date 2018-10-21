@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>课工场论坛列表</title>
+    <link href="css/bbs.css" rel="stylesheet">
+</head>
+<body>
+<div class="bbs">
+    <header><span>我要发帖</span></header>
+    <section>
+        <ul></ul>
+    </section>
+    <div class="post">
+        <input class="title" placeholder="请输入标题（1-50个字符）">
+        所属版块：<select><option>请选择版块</option><option>电子书籍</option><option>新课来了</option><option>新手报到</option><option>职业规划</option></select>
+        <textarea class="content"></textarea>
+        <input class="btn" value="发布">
+    </div>
+</div>
+<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+    $(".bbs header span").click(function(){
+        $(".bbs .post").show();
+    });
+    var tou=new Array("tou01.jpg","tou02.jpg","tou03.jpg","tou04.jpg");
+    $(".post .btn").click(function(){
+        var $newLi=$("<li></li>");  //创建一个新的li节点元素
+        var iNum=Math.floor(Math.random()*4);  //随机获取头像
+        var $touImg=$("<div><img src=images/"+tou[iNum]+"></div>");  //创建头像节点
+        var $title=$("<h1>"+$(".title").val()+"</h1>"); //设置标题节点
+        var newP=$("<p></p>");  //创建一个新的p节点元素
+        var myDate=new Date();
+        var currentDate=myDate.getFullYear()+"-"+parseInt(myDate.getMonth()+1)+"-"+myDate.getDate()+" "+myDate.getHours()+":"+myDate.getMinutes();
+        $(newP).append("<span>版块："+$(".post select").val()+"</span>");  //在p节点中插入版块；
+        $(newP).append("<span>发表时间："+currentDate+"</span>");     //在p节点中插入发布时间；
+        $($newLi).append($touImg);  //插入头像
+        $($newLi).append($title);   //插入标题
+        $($newLi).append(newP);    //插入版块、时间内容
+        $(".bbs section ul").prepend($newLi);
+
+        $(".post .content").val("");
+        $(".post .title").val("");
+        $(".post").hide();
+    });
+})
+</script>
+
+</body>
+</html>

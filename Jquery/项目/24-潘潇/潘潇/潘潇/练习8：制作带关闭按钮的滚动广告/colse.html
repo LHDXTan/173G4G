@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<title>带关闭按钮的滚动广告</title>
+<style type="text/css">
+#main{ text-align:center;}
+#float{
+	position:absolute;
+	left:30px;
+	top:60px; 
+	z-index:1;
+	}
+#close{
+	position:absolute;
+	top:60px;
+	left:134px;
+	z-index:2;
+	cursor:hand;
+}
+</style>
+</head>
+<body>
+<div id="close" onClick="adv_close()"><img src="images/close.jpg"></div>
+<div id="float"><img src="images/advpic.jpg"></div>
+<div id="main"><img src="images/contentpic.jpg"></div>
+<script type="text/javascript">
+	var adverTop;
+	var adverLeft;	
+	var adverObj;
+	function inix(){
+		adverObj=document.getElementById("adver");
+		if (adverObj.currentStyle) {
+			adverTop=parseInt(adverObj.currentStyle.top);
+			adverLeft=parseInt(adverObj.currentStyle.Left);
+		} else{
+			adverTop=parseInt(document.defaultView.getComputedStyle(adverObj,null).top);
+			adverLeft=parseInt(document.defaultView.getComputedStyle(adverObj,null).left);
+		}
+	}
+	function move(){
+			var sTop=parseInt(document.documentElement.scrollTop||document.nody.scrollTop);
+			var sLeft=parseInt(document.documentElement.scrollLeft||document.node.scrollLeft);
+			adverObj.style.top=adverTop+sTop+"px";
+			adverObj.style.left=adverLeft+sLeft+"px";
+	}
+	
+	window.onload=inix();
+	window.onscroll=move();	
+	
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

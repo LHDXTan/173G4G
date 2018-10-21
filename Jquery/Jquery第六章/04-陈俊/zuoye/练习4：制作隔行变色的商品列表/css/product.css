@@ -1,0 +1,10 @@
+
+*{padding:0;margin:0;}
+.contain{width:100%;margin:0px auto;}
+
+tr{text-align:center;}
+th{line-height:45px;background:#0000ff; color: #ffffff;}
+td{border-bottom:1px #d7d7d7 solid;}
+td,td a{padding:8px 0;color:#666;font-size:14px;}
+td img{vertical-align:middle;}
+td img,td a{display:inline-block;margin-right:8px;}

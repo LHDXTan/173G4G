@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>全网热播视频</title>
+    <link rel="stylesheet" href="css/play.css">
+    <script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+		    $("#play ul>li:not(li:last)").css("margin-right","10px");
+		    $("#play ul>li:last").css("background","#f0f0f0");
+		    $("#play ul>li>span").css("background","#f0a30f");
+		    $("#play ol>li>span:first").css("background","#f0a30f");
+		    $("#play ol>li>span:not(:first)").css("background","#a4a3a3");
+		    $("#play ol>li:lt(5)").css("background","url(images/orange.jpg) right -4px no-repeat");
+		    $("#play ol>li:eq(1)").css("background","url(images/green.jpg) right -4px no-repeat");
+		    $("#play ol>li:gt(4)").css("background","url(images/green.jpg) right -4px no-repeat");
+		    $("#play ol>li").mousemove(function(){
+		        $(this).find(":hidden").show();
+		    })
+		    $("#play ol>li").mouseout(function(){
+		        $("#play ol>li p:visible").hide();
+		    })
+		})
+    </script>
+</head>
+<body>
+<section id="play">
+    <h1>全网热播视频</h1>
+    <ul>
+        <li><img src="images/flv01.jpg"><p>昊花梦</p><span>1</span></li>
+        <li><img src="images/flv02.jpg"><p>好先生</p><span>2</span></li>
+        <li>
+            <ol>
+                <li><span>3</span>三八线<p>加入看单</p></li>
+                <li><span>4</span>吉详天宝<p>加入看单</p></li>
+                <li><span>5</span>亲爱的翻译官<p>加入看单</p></li>
+                <li><span>6</span>仙剑云之凡<p>加入看单</p></li>
+                <li><span>7</span>权力的游戏第五季<p>加入看单</p></li>
+                <li><span>8</span>琅琊榜<p>加入看单</p></li>
+                <li><span>9</span>那年青春我们正好<p>加入看单</p></li>
+                <li><span>10</span>乡村受情8（上）<p>加入看单</p></li>
+            </ol>
+        </li>
+    </ul>
+</section>
+</body>
+</html>

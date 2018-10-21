@@ -1,0 +1,30 @@
+*{margin: 0; padding:0; font-size: 12px;}
+ul,ol,li{list-style: none;}
+#nav{width: 100px; margin: 0 auto;}
+#nav li{height:36px;}
+#nav li span{
+    display: block;
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #7a6e6e url("../images/toolbars.png") no-repeat;
+}
+#nav li:nth-of-type(1) span{background-position: 0px -15px;}
+#nav li:nth-of-type(2) span{background-position: 0px -57px;}
+#nav li:nth-of-type(3) span{background-position: 1px -106px;}
+#nav li:nth-of-type(4) span{background-position: 0px -156px;}
+#nav li:nth-of-type(5) span{background-position: 0px -200px;}
+#nav li:nth-of-type(6) span{background-position: 2px -265px;}
+#nav li p{
+    height: 35px;
+    text-align: left;
+    background: #c81623;
+    color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    line-height: 35px;
+    padding-left: 10px;
+    display: none;
+}

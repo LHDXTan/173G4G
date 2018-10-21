@@ -1,0 +1,24 @@
+body,h1,h2,h3,p,ul,li,dl,dt,dd,div,section{margin: 0;padding: 0;}
+body{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    line-height: 28px;
+}
+#book{
+    margin: 5px auto 0 auto;
+    width: 650px;
+    overflow: hidden;
+}
+.imgLeft{
+    float:left;
+    width: 210px;
+}
+.imgLeft img{width: 200px;}
+.textRight{
+    float: right;
+    width: 440px;
+}
+#book h1{font-size: 16px; line-height: 50px;}
+.textRight dl{padding-left: 5em;}
+.textRight dl dd{display: none;}
+#jdPrice p{ display:inline;}
