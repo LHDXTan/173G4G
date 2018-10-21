@@ -1,0 +1,262 @@
+body{
+    border:0px;
+    padding:0px;
+    margin:0px auto;
+    font:12px Tahoma;
+}
+div,ul,li,dt,dl {
+    float:left;
+    margin:0px auto;
+    padding:0px;
+}
+li{
+    list-style:none;
+}
+a:link   {color:#333333;text-decoration: none;}
+a:visited   {color:#333333;text-decoration: none;}
+a:active   {color:#333333;text-decoration: none;}
+a:hover   {color:#ff7300;}
+
+input {
+    border:1px #333333 solid;
+    margin:0px;
+    padding:0px;
+}
+
+a img{
+    border:0px;
+}
+
+.red {color:red;font-weight: bold;text-align:left;}
+.b {font-weight:bold;}
+#container{
+    width:980px;
+    margin:0 auto;
+    float:none;
+}
+
+/*头部 从logo到服务热线*/
+#header {
+    width:980px;
+    height:136px;
+    margin:0px auto;
+    background:url(../images/h_bg.jpg) no-repeat -22px 0px;
+}
+
+#logo {
+    width:250px;
+    height:108px;
+    float:left;
+    background:url(../images/h_bg.jpg) no-repeat -22px 0px;
+}
+
+/*右上方菜单 购物车 帮助中心 加入收藏 设为首页等，.pic1至.pic6分别为菜单前的小图标，h_text为头部文本*/
+.upright_menu {
+    float:right;padding:15px 20px 0px 0px;
+}
+.pic{width:28px;height:26px;}
+.pic1{background:url(../images/icon.gif) no-repeat;}
+.pic2{background:url(../images/icon.gif) no-repeat -28px 0px;}
+.pic3{background:url(../images/icon.gif) no-repeat -56px 0px;}
+.pic5{background:url(../images/icon.gif) no-repeat -84px 0px;}
+.pic6{background:url(../images/icon.gif) no-repeat -112px 0px;}
+.h_text{padding:6px 5px 0px 5px; padding-top:8px\0;text-align:center;}
+.login {background:url(../images/icon.gif) no-repeat 0px -25px;}
+.reg {background:url(../images/icon.gif) no-repeat 0px -25px;}
+
+.upright_bottom{width:600px;height:26px;float:right;padding:7px 0px 0px 0px;}
+.bt {width:38px;height:26px;}
+.hello {padding:11px 33px 0px 0px;color:#636362;letter-spacing:3px;}
+.nav{width:980px;}
+.nav li {
+    width:84px;
+    height:30px;
+    float:left;
+    text-align:center;
+    font-weight:bold;
+}
+.nav li a{padding:8px 10px;}
+.nav li a:link,.nav li a:active,.nav li a:visited{
+    padding:8px 10px;
+    color:#333333;
+    font-size:13px;
+}
+.nav li a:hover{
+    padding:8px 10px;
+    background:url(../images/nav_bg.png) no-repeat !important;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled="true",sizingMethod="scale",src="../images/nav_bg.png");
+    _background-image:none;
+}
+
+/*主体*/
+#main{
+    width:980px;
+    margin:0 auto;
+    border:0px;
+    float:left;
+}
+
+/*主体左部 整个商品分类部分*/
+#left{
+    width:204px;
+    height:644px;
+    padding:38px 0px 0px 0px;
+    background:url(../images/bg.gif) no-repeat;
+}
+
+.left_list,.right_list{padding:0px 10px 0px 13px;width:174px;}
+.left_class{
+    font-size:14px;
+    color:#ff7300;
+    font-weight:bold;
+    float:none;
+    padding:9px 0px 0px 0px;
+}
+.left_li{color:#636362;width:58px;line-height:24px;}
+
+
+
+.width_8px{width:8px;height:644px;}
+
+/*主体中部 从大幅轮播图（蓝色印象）到疯狂采购（IBM上网本）*/
+#content{
+    width:527px;
+    background:url(../images/bg.gif) no-repeat -212px 0px;
+}
+.content_top{width:527px;padding-top:8px;height:182px;}
+
+#adv1,#adv2,#adv3,#adv4{display:none; }
+#adv {position:absolute;left:480px;top:315px;text-align:center;}
+#adv a{/*设置无下划线、文字背景超连接样式*/
+    font-size:13px;
+    text-decoration:none;
+    background-color:#cccccc;
+    padding:0px 5px;
+}
+
+.content_list{width:524px;height:449px;padding-top:58px;*padding-top:50px;}
+.content_li{width:166px;padding:3px 0px;text-align:center;}
+.content_img {width:142px;height:89px;float:none;text-align:center;}
+
+/*主体右部 从公告栏到手机充值*/
+#right{
+    width:233px;
+    /*_margin-right:-3px; 浮动层里有文字则需要此行*/
+    height:644px;
+    background:url(../images/bg.gif) no-repeat -747px 0px;
+}
+
+.right_list dl{padding:10px 10px 0px 0px;*width:190px;}
+.right_list dt{padding:0px 5px 0px 0px;}
+.right_list dd{line-height:17px;white-space:nowrap;}
+.right_list img{border:1px solid #9ea0a2;}
+
+.r1{width:200px;height:170px;}
+.r2 dl dt img{width:60px;height:47px;}
+.r2 dd {padding-top:20px;}
+
+#tab{padding-top:14px;}
+#tabtitle1{cursor:pointer;width:80px;height:50px;background:url(../images/bg.gif) no-repeat -761px -430px;}
+#tabtitle2{cursor:pointer;width:153px;height:50px;background:url(../images/bg.gif) no-repeat -840px -430px;}
+#tab1,#tab2{display:none;}
+
+/*底部 从友情链接到最后*/
+#footer{
+    width:980px;
+    height:150px;
+    float:none;
+}
+.copyright{width:980px;text-align:center;line-height:20px;}
+.register_textBroader{width:125px;}
+
+/*对联广告 两边主图片层和关闭图片层*/
+
+#advLeft{
+    position:absolute;
+    height:74px;
+    width:74px;
+    z-index:1;
+}
+#advRight{
+    position:absolute;
+    height:80px;
+    width:80px;
+    z-index:1;
+}
+
+#closeLeft{
+    cursor:pointer;
+    position:absolute;
+    height:13px;
+    width:13px;
+    z-index:2;
+}
+
+#closeRight{
+    cursor:pointer;
+    position:absolute;
+    height:13px;
+    width:13px;
+    z-index:2;
+}
+
+.register{float: left; padding-top: 40px;width: 650px;}
+.registerRight{float: right; width: 300px; padding-top: 40px}
+
+/*列表页*/
+.list_bg {background:url(../images/list_bg.gif) repeat-x;}
+.reg_text{width:130px;height:18px;margin:5px 5px; }
+
+/*注册页*/
+#formRegister dl{clear: both;}
+#formRegister dt{float: left;text-align:right; width:120px; height: 35px; line-height: 35px;}
+#formRegister dd{width:480px; float:left; height: 35px; line-height: 35px;}
+.reg_bg {background:url(../images/reg_bg.gif) repeat-x;}
+.login_bg {padding-top:50px;background:url(../images/login_bg.gif) repeat-x;}
+textarea{border:1px solid #cccccc;padding:5px;}
+#formRegister dl dd span{color: #ff0000;}
+
+
+/*长宽及对齐、浮动*/
+.a_l{text-align:left;}
+.a_r{text-align:right;}
+.a_c{text-align:center;}
+
+.f_l{float:left;}
+.f_r{float:right;}
+.f_n{float:none;}
+
+/*input大小*/
+.n4{width:35px;}
+
+.w3p{width:3%;}
+.w10p{width:10%;}
+.w15p{width:15%;}
+.w20p{width:20%;}
+.w25p{width:25%;}
+.w50p{width:50%;}
+.w63p{width:63%;}
+.w87p{width:87%;}
+
+.w9{width:9px;}
+.w84{width:84px;}
+.w81 {width:81px;}
+.w100{width:100px;}
+.w129 {width:129px;}
+.w252 {width:252px;}
+.w350{width:350px;}
+.w364{width:364px;}
+.w507{width:507px;}
+
+.h24 {height:24px;}
+.h32 {height:32px;}
+.h34 {height:34px;}
+.h35 {height:35px;}
+.h40 {height:40px;}
+.h58 {height:58px;}
+.h65 {height:65px;}
+.h460 {height:460px;}
+
+.h20p {height:20%;}
+.h37p {height:37%;}
+.h43p {height:43%;}

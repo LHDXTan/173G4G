@@ -1,0 +1,17 @@
+body,h1,h2,p,div{margin: 0; padding: 0;}
+body{font-size: 14px; line-height: 28px; font-family: "Î¢ÈíÑÅºÚ";}
+#book{
+    margin: 0 auto;
+    width: 800px;
+    overflow: hidden;
+    padding-top: 10px;
+    }
+img{float: left; margin-right: 10px;}
+h1{font-size: 32px; line-height: 45px;}
+.intro{clear: both; display: none;}
+h2{line-height: 45px; background: #999999; padding-left: 15px; color: #ffffff;}
+.intro p{text-indent: 2em;}
+.title{
+    font-size: 24px;
+    color: #0000ff;
+}

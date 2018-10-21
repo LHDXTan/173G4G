@@ -1,0 +1,47 @@
+*{padding:0;margin:0;}
+html{color:#404040;font-size:12px;font-family:"Arial","微软雅黑";}
+a{text-decoration:none;color:#1a66b3;}
+ul{list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.hide{display:none;}
+.clearfix{clear:both;overflow:hidden;height:0;}
+.wrap{width:800px;margin:0 auto;}
+
+/**头部**/
+.top{height:32px;background:#f9f9f9;padding-top:2px;line-height:32px;border-bottom:1px solid #f2f2f2}
+.top,.top a{color:#646464;}
+.top a:hover{color:#ff2832;}
+.top-l .top-login{color:#ff2832;margin-right:5px;}
+.top-m > li{float:left;height:22px;line-height:22px;padding-top:5px;}
+.top-m > li.line{width:1px;height:12px;background:#e1e1e1;margin:10px 0 0;padding:0;}
+.top-m > li  a{display:block;padding:0 8px;}
+.top-m > li a.menu-btn{padding-right:27px;background:url(../images/home_sprite.png) no-repeat right -307px;}
+.top-m > li a i{margin-right:6px;margin-top:3px;}
+.top-m > li.on{position:relative;border:1px #e6e6e6 solid;background:#fff;}
+.top-m ul.topDown{position:absolute;border:1px #e6e6e6 solid;border-top:0;width:100%;top:27px;left:-1px;background:#fff;display:none;}
+.top-m ul.topDown li{line-height:24px;}
+.top-m ul.topDown li a{display:block;padding-left:10px;color:#000;}
+.top-m ul.topDown li a:hover{background:#f2f2f2;color:#000;}
+.top-m .top-car{width:15px;height:14px;background:url(../images/home_sprite.png) no-repeat -40px -86px;}
+.top-m .top-tel{width:11px;height:16px;background:url(../images/home_sprite.png) no-repeat -40px -70px;}
+
+.wrap img[alt='logo']{margin: 10px 0;}
+.nav {
+    float: left;
+width: 200px;
+margin-right: 10px;}
+.nav header{ padding-left: 15px; font-size: 18px; color: #ffffff; background: #6ABB78; line-height: 45px;}
+.nav ul{border: 1px #cccccc solid; border-top: none;}
+.nav dt{background: #efefef; font-size: 16px; padding-left: 15px; color: #666666; line-height: 35px; border-bottom: 1px solid #ffffff; cursor: pointer;}
+.nav dd{display: none;padding-left: 15px;}
+.nav dd a{color: #666666; line-height: 30px;  font-size: 14px;}
+.content{
+    float: left;
+    width: 548px ;
+    border: 1px #cccccc solid;
+padding: 10px;}
+.content p{font-size: 14px;color: #666666; padding-bottom: 15px; }
+.content li{padding-left: 20px;}
+.content li a{color: #666666; line-height: 30px; padding-left: 3px; }
+.content li a:hover{text-decoration: underline;}

@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    line-height:20px;
+}
+#register{
+    width:525px;
+    margin: 0 auto;
+}
+.hr_1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3275c3;
+    height: 35px;
+    border-bottom: 2px solid #3275c3;
+    vertical-align:bottom;
+    padding-left:12px;
+    margin-bottom: 15px;
+}
+#register dl{clear: both; height: 30px;}
+#register dl dt{
+    text-align:right;
+    width:80px;
+    height:25px;
+    padding-right:5px;
+    float: left;
+}
+#register dl dd{
+    float: left;}
+#register dl dd div{ display: inline; padding-left: 5px;}
+#register dl dd input:not(.btn){
+    width:130px;
+    height:18px;
+    border:solid 1px #0066FF;
+}
+
+.red{
+    color:#cc0000;
+    font-weight:bold;
+}
+
+div{
+    color:#F00;
+}

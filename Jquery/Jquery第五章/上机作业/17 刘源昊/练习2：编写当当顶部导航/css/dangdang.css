@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+}
+a{
+    color:#999;
+    text-decoration:none;
+}
+body{
+    background:#fff url(../images/bg.jpg) no-repeat;
+}
+ul{
+    list-style:none;
+}
+.pos{
+    position:absolute;
+}
+#menu{
+    left:590px;
+    top:5px;
+}
+#menu li{
+    display:block;
+    height:20px;
+    line-height:20px;
+    background-color:#fff;
+    padding:4px;
+}

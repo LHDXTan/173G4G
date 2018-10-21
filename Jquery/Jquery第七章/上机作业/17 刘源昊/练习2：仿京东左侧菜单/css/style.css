@@ -1,0 +1,27 @@
+*{padding:0;margin:0;}
+a{text-decoration:none;}
+.nav-box{
+	width:210px;
+	margin:5px 0 0 5px;
+}
+.nav-top a{
+	display:block;
+	height:45px;
+	font-size:16px;
+	line-height:45px;
+	padding:0 10px;
+	background:#B1191A;
+	color:#fff;
+}
+ul{background:#c81623;list-style:none;padding-bottom:1px;}
+ul li{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#fff;
+	position:relative;
+	padding-left: 5px;
+}
+.orange{background-color: orange;}
+ul li a{color:#fff;}
+ul li div{display:none; position: absolute; left: 211px; top:0px;}
