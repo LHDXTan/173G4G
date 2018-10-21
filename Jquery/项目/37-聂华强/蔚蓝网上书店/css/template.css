@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*网页头部导航样式开始*/
+.header_top,.header_middle,.header_search{
+    margin-left:auto;
+    margin-right:auto;
+    width:955px;
+    clear:both;
+    /*display: inline-block;*/
+}
+.header_top_left{
+    float:left;
+    width:260px;
+    padding-left:10px;
+    line-height:28px;
+}
+.header_top_right{
+    float:right;
+    padding-right:10px;
+    width:400px;
+    text-align:right;
+}
+.header_top_right li{
+    float:right;
+    margin-left:5px;
+    margin-top:5px;
+}
+.logo,.menu_left,.menu_right{
+    float:left;
+}
+.logo{
+    width:155px;
+    padding-top:13px;
+    height:47px;
+}
+.menu_left{
+    height:28px;
+    margin-top:32px;
+    line-height:35px;
+    width:510px;
+    border: 1px #a1a1a1 solid;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #fbfbfb;
+}
+
+.menu_left ul li{
+    float:left;
+    height:28px;
+    padding:0px 3px 0px 3px;
+}
+.bold,.bold:hover{
+    font-weight:bold;
+}
+
+.menu_right{
+    margin-top:32px;
+    height:28px;
+}
+#menu_dull_red li{
+    float:left;
+    margin-left:5px;
+    text-align:center;
+    line-height:35px;
+    height:28px;
+    background: #d5edf6;
+    border: 1px solid #3abbeb;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 4px;
+}
+#menu_dull_red a,#menu_dull_red:hover{
+    color:#127da5;
+    text-decoration:none;
+    font-weight:bold;
+}
+.menu{
+    clear:both;
+    background:#1eb2e9;
+    height:27px;
+    line-height:28px;
+    text-align:center;
+    color:#FFF;
+    border-radius: 5px;
+}
+#menu_white{
+    float:left;
+
+}
+.menu_mid_white,.menu_mid_white:hover{
+    color:#FFF;
+    padding:0px 4px 0px 4px;
+}
+
+.header_search{
+    margin-top:0px;
+    height:35px;
+    border: 1px #a1a1a1 solid;
+    border-radius: 5px;;
+    background: #fbfbfb;
+}
+
+#header_serach_mid_menu li{
+    float:left;
+    margin-top:6px;
+    padding:0px 5px 0px 5px;
+    line-height:25px;
+}
+.header_input_search{
+    margin-left:15px;
+    width:200px;
+    height:18px;
+}
+/*网页头部导航样式结束*/
+/*网页版权部分样式开始*/
+.footer_end{
+    width:800px;
+    margin:0px auto 0px auto;
+    clear:both;
+    text-align:center;
+}
+
+/*网页版权部分样式结束*/
+
+
+/*导航部分下拉菜单样式*/
+#dd_menu_top_down{
+    position:absolute;
+    width:80px;
+    text-align:left;
+    border:solid 1px #999;
+    border-top:0px;
+    display:none;
+    background-color:#FFF;
+    padding-left:10px;
+}
+
+#dd_menu_top_down li{
+    float:none;
+}
