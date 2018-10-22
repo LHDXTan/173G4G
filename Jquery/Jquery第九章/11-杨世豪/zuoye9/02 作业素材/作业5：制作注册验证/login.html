@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>制作注册验证</title>
+	<link href="css/reg.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="main"><img src="images/top.jpg"  alt="top"/>
+	<form action="" method="post" id="myform">
+		<dl>
+			<dt class="left">用户名：</dt>
+			<dd><input id="user" type="text" class="inputs" onblur="checkUser()" onfocus="showUser()" /><div id="user_prompt" class="prompt"></div></dd>
+		</dl>
+		<dl>
+			<dt class="left">密码：</dt>
+			<dd><input id="pwd" type="password"  class="inputs" onblur="checkPwd()" onfocus="showPwd()" /><div id="pwd_prompt" class="prompt"></div></dd>
+		</dl>
+		<dl>
+			<dt class="left">&nbsp;</dt>
+			<dd><input name="" type="image" src="images/sumbit_btn.jpg" /></dd>
+		</dl>
+	</form>
+</div>
+</body>
+</html>

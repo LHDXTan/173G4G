@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:12px;
+    line-height:25px;
+}
+.main{
+    width:470px;
+    margin: 0 auto;
+}
+
+.main dl{clear: both; height: 30px;}
+.main dl dt{
+    text-align:right;
+    float: left;
+    width:100px;
+    height:25px;
+    padding-right:5px;
+}
+.inputs{
+    width:100px;
+    height:16px;
+    border:solid 1px #666666;
+    float:left;
+    margin-right:5px;
+}
+.main dl dd div{
+    display: inline;
+    margin-left:10px;
+    color:#F00;
+}

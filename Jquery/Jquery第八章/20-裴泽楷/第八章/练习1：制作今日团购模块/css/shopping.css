@@ -1,0 +1,49 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+}
+#pruduce{
+    width:947px;
+    background-color:#F2F2F2;
+}
+.top{
+    height:55px;
+    background:url(../images/top.jpg) no-repeat 10px 10px;
+}
+.main{
+    text-align:center;
+    height:309px;
+}
+.box{
+    width:300px;
+    height:285px;
+    border:1px solid #999;
+    margin:0px 6px;
+    float:left;
+    cursor:pointer;
+}
+dl{
+    padding-top:3px;
+
+}
+dd{
+    line-height:30px;
+}
+
+div.btprice_1{
+    height:50px;
+    background:#FFF2CE url(../images/bt1.jpg) no-repeat 5px 4px;
+}
+div.btprice_2{
+    height:50px;
+    background:#FFF2CE url(../images/bt2.jpg) no-repeat 5px 4px;
+}
+div.btprice_3{
+    height:50px;
+    background:#FFF2CE url(../images/bt3.jpg) no-repeat 5px 4px;
+}
+.hoverstyle{
+    background-color:#D51938;
+    color:#fff;
+}
