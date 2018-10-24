@@ -1,0 +1,25 @@
+html,body{
+	width:1200px;
+	margin: 0px auto;
+}
+div{
+	text-align:center;
+}
+#tab{
+	height:350px;
+	width:650px;
+}
+#tr1{
+	position:absolute;
+	margin-top: 240px;
+	margin-left: 380px;
+}
+#tr2{
+	position:absolute;
+	margin-top: 280px;
+	margin-left: 395px;
+}
+#bt{
+	margin-left:-255px ;
+	margin-top: -30px;	
+}
